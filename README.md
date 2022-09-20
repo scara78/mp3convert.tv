@@ -1,11 +1,12 @@
 # MADE FOR EDUCATIONAL PURPOSES ONLY!
 
-Please read [https://mp3convert.tv/termsOfUse](https://mp3convert.tv/termsOfUse) for more info.
+How to run?
+1) npm i
+1) npm run dev
 
-## How to Contribute?
+How to build?
+1) npm i
+2) npm build
 
-1. Fork the repository.
-2. Edit what you feel like can be imporved.
-3. Open a Pull Request.
-
-It will be reviewed, tested and then will be merged.
+How to make a docker image?
+1) docker build -t mp3convert . (MAKE SURE TO EXPOSE PORT 3000 WHILE RUNNING YOUR DOCKER IMAGE IN A CONTAINER!)
