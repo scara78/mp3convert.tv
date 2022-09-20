@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  transition: background-color 200ms;
+  outline: none;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.modal * {
+  color: #000 !important;
+  margin: 15px 0;
+}
+.modal .button,
+.modal button {
+  background: #009ece;
+  color: #fff !important;
+  border: 0;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.home #termsAgree {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.home h2 {
+  margin: 30px 0;
+}
+.navbar h1 {
+  color: #009ece;
+}
+.dark-mode .navbar h1 {
+  color: #fff;
+}
+.home .navbar h1 {
+  color: #fff !important;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.content .navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #000;
+}
+.content .home .navbar a {
+  color: #fff;
+}
+.content .home .navbar a:hover {
+  color: #d8d8d8;
+}
+.dark-mode .navbar a {
+  color: #fff;
+}
+.navbar a:hover {
+  color: #009ece;
+}
+/* .content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+} */
+
+span.red {
+  color: #009ece;
+}
+span.underline {
+  text-decoration: underline;
+}
+span.pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar .links {
+    font-size: 0.8rem;
+  }
+  .navbar h1 {
+    font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+  footer .footer-links {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .home .showcase {
+    display: block !important;
+  }
+  .home .donate-between {
+    display: block !important;
+  }
+  .home .donate-bottom {
+    display: none !important;
+  }
+  .home header .card {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+}
+.home .donate-between {
+  display: none;
+  margin-bottom: 10px;
+}
+.home .donate-between a {
+  color: #fff;
+}
+
+.home .donate-bottom {
+  display: block;
+}
+
+/* Pages */
+.home {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact {
+  max-width: 900px;
+  text-align: center;
+  margin: 30px auto;
+}
+.history {
+  max-width: 900px;
+  margin: 30px auto
+}
+.home a {
+  color: #009ece;
+}
+.home .inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.contact input, .contact textarea {
+  margin: 30px auto !important;
+}
+
+.contact textarea {
+  resize: none !important;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.home input, .contact input, .contact textarea {
+  width: 80%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  resize: vertical;
+}
+.home select {
+  margin: 10px 0;
+  cursor: pointer;
+}
+.home button:hover, .contact button:hover {
+  background: #008ab5;
+}
+.home select,
+.home select option {
+  color: #333 !important;
+}
+.home button, .contact button {
+  background: #009ece;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.home button:disabled {
+  cursor: not-allowed;
+}
+.home .error, .contact .error {
+  font-weight: bold;
+  color: #fc192f;
+  margin: 20px 0;
+}
+.home .warning {
+  margin: 20px 0;
+}
+.home .warning h4, .home .warning p {
+  color: #f88f55;
+}
+.contact .success {
+  color: #00ff00;
+  margin: 20px 0;
+}
+
+.home .main-heading {
+  margin-bottom: 30px;
+}
+
+/* 404 Page */
+.not-found h2 {
+  color: #009ece;
+  margin-bottom: 20px;
+}
+.not-found p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.not-found a {
+  text-decoration: none;
+  color: #009ece;
+}
+
+.home #download a:nth-child(even) {
+  background-color: #009ece;
+}
+
+.grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 10px;
+}
+
+.home #download {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center !important;
+}
+.home #download a {
+  text-decoration: none;
+  background: #009ece;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.home #download a.disabled-download {
+  text-decoration: none;
+  background: #009ece;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0 4px;
+  cursor: not-allowed;
+}
+
+.dark-mode {
+  background-color: #202124;
+}
+.dark-mode * {
+  color: #fff;
+}
+.dark-mode input, .dark-mode textarea {
+  background-color: #313236;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+
+.patch-notes {
+  max-width: 900px;
+  margin: 30px auto;
+}
+.patch-notes .update-list {
+  margin-left: 10px;
+}
+
+.patch-notes a {
+  color: #009ece;
+}
+
+.patch-notes .update-list .update ul {
+  list-style-position: inside;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.patch-notes .update-list .update li {
+  margin: 2px 0;
+}
+
+.patch-notes .update-list .update h3 {
+  color: #009ece;
+  margin: 10px 0;
+}
+
+.home #videoInfo {
+  margin: 40px 0;
+  border: solid #009ece;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.home .sponsor {
+  max-width: 500px;
+  margin: 40px auto;
+  border: solid gold;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home .sponsor div {
+  display: flex;
+  margin: 20px 0;
+}
+
+.home .sponsor a {
+  text-decoration: none;
+  background: #009ece;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.home #videoInfo .videoInfo-flex {
+  display: flex
+}
+
+.home #videoInfo img, .home .sponsor div img {
+  width: 170px;
+  height: 110px;
+  margin-right: 10px;
+}
+
+.home #videoInfo div h4 {
+  margin-bottom: 10px;
+}
+
+.home #videoInfo div p {
+  margin: 5px 0;
+}
+
+.home #videoInfo div {
+  text-align: left;
+}
+
+.searched-video,
+.listedVideo {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.searched-video button {
+  margin-left: 10px;
+  max-height: 54px;
+  max-width: 54px;
+}
+
+.searched-video img,
+.listedVideo img {
+  margin-right: 10px;
+  width: 120px;
+  height: 70px;
+}
+
+.listedVideo .downloadButton:hover {
+  background: #008ab5
+}
+
+.listedVideo .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.listedVideo .buttons > a:first-child {
+  margin-bottom: 10px;
+}
+
+
+.listedVideo .buttons a:nth-child(even) {
+  background-color: #009ece;
+}
+
+.listedVideo .downloadButton {
+  text-align: center;
+  display: block;
+  text-decoration: none !important;
+  background: #009ece;
+  margin-left: 10px;
+  color: #fff;
+  border: 0;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.searched-video .audioContainer {
+  position: relative;
+  height: 70px;
+  width: 120px;
+}
+
+.searched-video .play-stop-button {
+  height: 30px;
+  width: 30px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  background-color: #202124;
+  opacity: 0.5;
+}
+
+.privacy-policy {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.privacy-policy h2 {
+  margin: 30px 0;
+}
+
+.privacy-policy h3 {
+  margin: 20px 0;
+}
+
+.privacy-policy a {
+  color: #009ece;
+}
+
+footer {
+  margin: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.search {
+  margin-top: 100px;
+}
+
+.terms-of-use {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.terms-of-use h2 {
+  margin: 30px 0;
+}
+
+.terms-of-use h3 {
+  margin: 20px 0;
+}
+
+.terms-of-use a {
+  color: #009ece;
+}
+
+.footer-links a {
+  margin: 0 5px;
+}
+footer a:hover {
+  color: #009ece;
+}
+.footer-links {
+  font-size: 0.8rem;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #009ece;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 24%;
+  left: 24%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.home header {
+  /* background-image: linear-gradient(#009ece, #009ece); */
+  background-color: #009ece;
+  color: #fff;
+  min-height: 430px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.home header::after, .home header::before {
+  content: "";
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  transform: skewY(-1.5deg)
+}
+
+.dark-mode .home header::after, .dark-mode .home header::before {
+  background-color: #202124;
+}
+
+.home header .card div {
+  margin: 5px 10px;
+}
+
+.home header .card {
+  min-height: 390px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  position: relative;
+}
+
+.home .showcase {
+  align-items: flex-start;
+  padding: 0 10px;
+  margin: 30px auto 50px auto;
+  max-width: 1800px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dark-mode .home header .card {
+  background-color: #262626;
+}

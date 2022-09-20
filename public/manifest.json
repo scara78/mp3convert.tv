@@ -1,0 +1,21 @@
+{
+  "short_name": "YT Downloader",
+  "name": "Youtube Downloader",
+  "description": "mp3convert.tv is a website where you can download music from Youtube quick, free and WITHOUT ADS!",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#009ece",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
